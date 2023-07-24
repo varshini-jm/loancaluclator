@@ -1,0 +1,145 @@
+//alert(hello);
+//console.log("Microdegree");
+//console.log("true");
+//var greeting = "hello";
+//console.log(greeting);
+
+//console.log([1, 2, 3, 4]);
+
+//console.log({a:1,b:2,c:3});
+
+//var name = "Mani"
+//console.log(name);
+//name = "Gourav"
+//console.log(name);
+//var greeting
+//greeting = "hello";
+//console.log(greeting);
+
+//var $name = "John"
+//console.log($name)
+
+//var firstName = " Mani";
+//console.log(firstName);
+
+//var first_Name = " Mani"; // underscore
+//console.log(first_Name);
+
+//const name = " Mani";
+//console.log(name);
+//name = "Gourav";// not possible
+//console.log(name)
+
+//const name = "manikanta"
+//console.log(typeof name);
+ //const age = 10.55;
+ // number
+ 
+ // boolean
+ //const hasSibblings = true;
+ //console.log(typeof hasSibblings);
+ 
+
+// reference
+//const hobbies = ["movies", "cricket"];
+//const person = {
+   // name: "Mani",
+  //  age: 24
+//};
+//dates
+//const today = new Date();
+//console.log(today)
+//console.log( typeof today)
+ // convert
+ //let val;
+ //val = (5).toString
+ //val=5;
+ //console.log(val);
+ //console.log( typeof val);
+ //console.log(val.length);
+ //console.log(val.toFixed(2));
+
+// Template literals
+const name ="Mani"
+const age=25;
+const job ="web"
+const city="bangalore"
+// without template literals
+
+let html;
+html ="<ul><li>Name:" + 
+name +"</li><li>Age:" + 
+age +"</li><li>Job:" + 
+job + "</li><li>City:" + 
+city + "</li></ul>";
+
+document.body.innerHTML =html;
+// with using template literals\
+html = `
+<ul>
+<li> Name: ${name}</li>
+<li> Age: ${age}</li>
+<li> Job: ${job}</li>
+<li> city: ${city}</li>
+</ul>
+`;
+document.body.innerHTML =html;
+
+// create array 
+const numbers = [43, 34, 56, 78, 89, 89, 8];
+
+console.log(numbers[3]);
+
+
+//object Literals
+const person ={
+  firstname:"Mani",
+  age:25,
+ getBirthYear: function(){
+ return 2020 - this.age;
+ }
+};
+
+let val;
+val = person;
+
+console.log(val.getBirthYear());
+
+const id = 110;
+
+if(id==100){
+  console.log("yes the number is 100")
+}else{
+  console.log("Not 100");
+}
+
+const ih = 100 ;
+console.log(ih==100? "yes,correct" : "no its not 100");
+
+//switches
+const dayOfWeek = new Date().getDay();
+let day;
+switch(dayOfWeek){
+  case 0:
+    console.log('Sunday')
+    break;
+    case 1:
+      console.log('monday')
+      break;
+    case 2:
+      console.log('tuesday')
+        break;
+    case 3:
+      console.log('wednesay')
+          break;
+    case 4:
+      onsole.log('thursday')
+        break;
+    case 5:
+       console.log('friday')
+        break;
+        case 6:
+          console.log('Satday')
+          break;
+}
+console.log(day)
